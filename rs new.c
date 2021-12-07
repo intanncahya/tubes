@@ -13,33 +13,33 @@ void mainMenu(void);							//Fungsi untuk menampilkan pilihan menu
 void pasienn(void);								//Fungsi untuk login pasien
 void admin(void);								//Fungsi untuk login admin
 void antrean(void);                             //Fungsi untuk menampilkan menu antrean admin
-void keluar(void);
-void IGD(void);
-void insert(int);
+void keluar(void);                              //Fungsi untuk keluar dari menu
+void IGD(void);                                 //Fungsi untuk menampilkan layanan IGD
+void insert(int);                               //Fungsi untuk menambahkan nomor antrean
 void eliminate();								//Fungsi untuk menghapus nomor antrean
 void create();									//Fungsi untuk membuat antrean kosong
 void check(int);								//Fungsi untuk mengecek nomor dan letaknya pada antrean
-void add();
-void view();
-void del();
+void add();                                     //Fungsi untuk menambahkan data pasien IGD 
+void view();                                    //Fungsi untuk menampilkan data pasien IGD
+void del();                                     //Fungsi untuk menghapus data pasien IGD
 void display();									//Fungsi untuk menampilkan nomor antrean
 void rawatInap(void);                           //Fungsi untuk menampilkan identitas pasien rawat inap
-int queueArray[MAX];									
+int queueArray[MAX];						    //Fungsi untuk membuat nomor antrean
 int n,i,j=0,a=0,sum=0,g,flag,num;
 int pilihanPelayanan(void);                     //Fungsi untuk menampilkan pilihan layanan
 int pilihanJalurLayanan();                      //Fungsi untuk menampilkan jalur pelayanan
 int pilihanPoliklinik();                        //Fungsi untuk menampilkan pilihan poliklinik rawat jalan
 int poliklinik(int poli);                       //Fungsi untuk menampilkan pilihan menu dalam rawat inap
-int dataPasienPoli(char* nama, char* dokter);
-int piihanMenuFarmasi();
-int farmasi(int m, int jalur);
-int dataFarmasi(char* dokter, int jasa, int jalur);
-int pilihanLaboratorium();
-int laboratorium(int lab, int jalur);
-int dataPasienLab(char* nama, int harga, int jalur);
-int pilihanRadiologi();
-int radiologi(int rad, int jalur);
-int dataPasienRad(char* nama, int harga, int jalur);
+int dataPasienPoli(char* nama, char* dokter);   //Fungsi untuk menampilkan data pasien poli
+int piihanMenuFarmasi();                        //Fungsi untuk menampilkan layanan farmasi
+int farmasi(int m, int jalur);                  //Fungsi untuk menampilkan dokter jasa dan jalur
+int dataFarmasi(char* dokter, int jasa, int jalur);     //Fungsi untuk menampilkan data pasien farmasi
+int pilihanLaboratorium();                              //Fungsi untuk menampilkan pilihan layanan laboratorium
+int laboratorium(int lab, int jalur);                   //Fungsi untuk menampilkan menu di dalam laboratorium
+int dataPasienLab(char* nama, int harga, int jalur);    //Fungsi untuk menampilkan data pasien laboratorium
+int pilihanRadiologi();                                 //Fungsi untuk menampilkan layanan radiologi
+int radiologi(int rad, int jalur);                      //Fungsi untuk menampilkan menu pada radiologi
+int dataPasienRad(char* nama, int harga, int jalur);    //Fungsi untuk menampilkan data pasien radiologi
 
 int total;
 int vvip=3, vip=2, gen=1;
