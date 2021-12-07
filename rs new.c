@@ -12,7 +12,7 @@ void title(void);   							//Fungsi untuk menampilkan judul
 void mainMenu(void);							//Fungsi untuk menampilkan pilihan menu
 void pasienn(void);								//Fungsi untuk login pasien
 void admin(void);								//Fungsi untuk login admin
-void antrean(void);
+void antrean(void);                             //Fungsi untuk menampilkan menu antrean admin
 void keluar(void);
 void IGD(void);
 void insert(int);
@@ -22,14 +22,14 @@ void check(int);								//Fungsi untuk mengecek nomor dan letaknya pada antrean
 void add();
 void view();
 void del();
-void display();									//Funngsi untuk menampilkan nomor antrean
-void rawatInap(void);
+void display();									//Fungsi untuk menampilkan nomor antrean
+void rawatInap(void);                           //Fungsi untuk menampilkan identitas pasien rawat inap
 int queueArray[MAX];									
 int n,i,j=0,a=0,sum=0,g,flag,num;
-int pilihanPelayanan(void);
-int pilihanJalurLayanan();
-int pilihanPoliklinik();
-int poliklinik(int poli);
+int pilihanPelayanan(void);                     //Fungsi untuk menampilkan pilihan layanan
+int pilihanJalurLayanan();                      //Fungsi untuk menampilkan jalur pelayanan
+int pilihanPoliklinik();                        //Fungsi untuk menampilkan pilihan poliklinik rawat jalan
+int poliklinik(int poli);                       //Fungsi untuk menampilkan pilihan menu dalam rawat inap
 int dataPasienPoli(char* nama, char* dokter);
 int piihanMenuFarmasi();
 int farmasi(int m, int jalur);
